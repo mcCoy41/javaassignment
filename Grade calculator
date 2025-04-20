@@ -1,0 +1,25 @@
+public class Grade_calculator {
+    /
+    private String grade;
+    //method to calculate grade called calculateGrade(double marks)
+    public void calculateGrade(double marks){
+
+        //if conditions to assign grade
+        if(marks >= 90){
+            grade="A"; 
+        }else if(marks >= 75){
+            grade="B";
+        }else if(marks >= 50){
+            grade="C";
+        }else {
+            grade="D";
+        }
+    }    
+
+    //method to display grade called displaygrade
+    public void displayGrade(){
+        System.out.println("Grade: " + grade);
+            
+    }
+    
+}
