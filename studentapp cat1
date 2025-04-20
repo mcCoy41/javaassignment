@@ -1,0 +1,33 @@
+
+/**
+>This IS A PROGRAM NAMED @StudentApp that uses Displayinfo method to display a students information
+
+
+@author:NATHAN KINYANJUI
+ADM :CT101/G/21008/23.
+CS Y2 S2
+@VERSION 1.0.1
+DATE : 4/20/2025
+6:40 PM
+*/
+
+
+import java.util.Scanner;
+
+public class StudentApp {
+    public static void main(String[] args) {
+        Scanner student = new student(System.in);
+        System.out.print("Enter Student Name: ");
+        String name = student.nextLine();
+        System.out.print("Enter Course: ");
+        String course = student.nextLine();
+        System.out.print("Enter Student ID: ");
+        String studentID = student.nextLine();
+        
+    
+        StudentRecord studente= new StudentRecord(studentID, name, course);
+        
+    
+        student.displayInfo();student.close();
+    }
+}
